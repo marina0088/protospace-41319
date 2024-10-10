@@ -165,7 +165,7 @@ a {
 .prototype__wrapper{
   min-height: calc(100vh - 161px);
 }
-.prototype__hedding{
+.prototype__heading{
   font-size: 24px;
   font-weight: bold;
   text-align: center;
