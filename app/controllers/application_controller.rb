@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :profile, :occupation, :position])
 
   # サインイン時のパラメータを明示的に許可
-  devise_parameter_sanitizer.permit(:sign_in, keys: [:email, :password])
+    devise_parameter_sanitizer.permit(:sign_in, keys: [:email, :password])
   end
 end

@@ -3,7 +3,6 @@ class PrototypesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   # 共通のプロトタイプ設定メソッドを実行するアクションを指定
   before_action :set_prototype, only: [:show, :edit, :update, :destroy]
-
   # 投稿者のみが編集・更新・削除できるように権限を確認
   before_action :authorize_user!, only: [:edit, :update, :destroy]
   def index
